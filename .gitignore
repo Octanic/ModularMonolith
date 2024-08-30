@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/.vs/RiverBooks
+/src/RiverBooks.Books/bin/Debug/net8.0
+/src/RiverBooks.Books/obj
+/src/RiverBooks.Web/bin/Debug/net8.0
+/src/RiverBooks.Web/obj
