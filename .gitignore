@@ -3,8 +3,8 @@
 ################################################################################
 
 /.vs
-/src/.vs/RiverBooks
-/src/RiverBooks.Books/bin/Debug/net8.0
+/src/RiverBooks.Books/bin
 /src/RiverBooks.Books/obj
-/src/RiverBooks.Web/bin/Debug/net8.0
+/src/RiverBooks.Web/bin
 /src/RiverBooks.Web/obj
+/src/.vs/
