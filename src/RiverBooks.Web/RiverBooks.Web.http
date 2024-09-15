@@ -4,3 +4,35 @@ GET {{RiverBooks.Web_HostAddress}}/books
 Accept: application/json
 
 ### 
+@BookID=0203517e-dc92-42c3-b6d5-267adec4faec
+GET {{RiverBooks.Web_HostAddress}}/books/{{BookId}}
+Accept:application/json
+
+###
+POST {{RiverBooks.Web_HostAddress}}/books
+Accept:application/json
+Content-Type: application/json
+{
+	"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+	"title": "Livro de testes",
+	"author": "Teste da Silva",
+	"price": 20.27
+}
+
+###
+# Testa o location header
+GET {{RiverBooks.Web_HostAddress}}/books/3fa85f64-5717-4562-b3fc-2c963f66afa6
+Accept:application/json
+
+###
+DELETE {{RiverBooks.Web_HostAddress}}/books/3fa85f64-5717-4562-b3fc-2c963f66afa6
+Accept:application/json
+
+###
+POST {{RiverBooks.Web_HostAddress}}/books/3fa85f64-5717-4562-b3fc-2c963f66afa6/pricehistory
+Accept:application/json
+Content-Type: application/json
+{
+	"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+	"price": 9.99
+}

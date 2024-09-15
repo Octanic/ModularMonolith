@@ -16,6 +16,7 @@ internal class BookService(IBookRepository bookRepository) : IBookService
 		if (book is not null)
 		{
 			await bookRepository.DeleteAsync(book);
+			await bookRepository.SaveChangesAsync();
 		}
 	}
 
