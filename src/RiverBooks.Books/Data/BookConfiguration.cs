@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace RiverBooks.Books;
+namespace RiverBooks.Books.Data;
 internal class BookConfiguration : IEntityTypeConfiguration<Book>
 {
 	internal static readonly Guid Sample1 = new Guid("E47A0547-FF77-488F-9D2D-CF4AD659CF37");
@@ -27,9 +27,4 @@ internal class BookConfiguration : IEntityTypeConfiguration<Book>
 		yield return new Book(Sample2, "As Duas Torres", tolkien, 14.99m);
 		yield return new Book(Sample3, "O Retorno do Rei", tolkien, 19.99m);
 	}
-}
-
-public static class DataSchemaConstants
-{
-	public const int DEFAULT_NAME_LENGTH = 100;
 }

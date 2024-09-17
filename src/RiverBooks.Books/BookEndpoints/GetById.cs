@@ -1,8 +1,8 @@
 ﻿using FastEndpoints;
 
-namespace RiverBooks.Books;
-internal class GetBookByIdEndpoint(IBookService bookService) : 
-	 Endpoint<GetBookByIdRequest, BookDto>
+namespace RiverBooks.Books.BookEndpoints;
+internal class GetById(IBookService bookService) :
+		Endpoint<GetByIdGetBookByIdRequest, BookDto>
 {
 	private readonly IBookService _bookService = bookService;
 	public override void Configure()
@@ -10,7 +10,7 @@ internal class GetBookByIdEndpoint(IBookService bookService) :
 		Get("/books/{Id}");
 		AllowAnonymous();
 	}
-	public override async Task HandleAsync(GetBookByIdRequest req, CancellationToken ct)
+	public override async Task HandleAsync(GetByIdGetBookByIdRequest req, CancellationToken ct)
 	{
 		var book = await _bookService.GetBookByIdAsync(req.Id);
 

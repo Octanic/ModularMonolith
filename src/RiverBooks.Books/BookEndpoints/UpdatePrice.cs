@@ -1,7 +1,7 @@
 ﻿using FastEndpoints;
 
-namespace RiverBooks.Books;
-internal class UpdateBookPriceEndpoint(IBookService bookService) :
+namespace RiverBooks.Books.BookEndpoints;
+internal class UpdatePrice(IBookService bookService) :
 	Endpoint<UpdateBookPriceRequest, BookDto>
 {
 	public override void Configure()

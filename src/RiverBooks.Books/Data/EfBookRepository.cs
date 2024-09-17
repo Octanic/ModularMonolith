@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace RiverBooks.Books;
+namespace RiverBooks.Books.Data;
 internal class EfBookRepository : IBookRepository
 {
 	private readonly BookDbContext _dbContext;
