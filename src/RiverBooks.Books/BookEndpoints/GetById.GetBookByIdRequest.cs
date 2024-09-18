@@ -1,6 +1,6 @@
 ﻿namespace RiverBooks.Books.BookEndpoints;
 
-public class GetByIdGetBookByIdRequest
+public class GetBookByIdRequest
 {
 	public Guid Id { get; set; }
 
