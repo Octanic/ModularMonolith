@@ -7,13 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiverBooks.Web", "RiverBook
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiverBooks.Books", "RiverBooks.Books\RiverBooks.Books.csproj", "{96587CF0-CAF0-4531-AE60-18FC06C59E16}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9950BEC6-42DF-4537-8221-D3113F5A183F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{9950BEC6-42DF-4537-8221-D3113F5A183F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiverBooks.Books.Tests", "RiverBooks.Books.Tests\RiverBooks.Books.Tests.csproj", "{8B25DA1B-23E5-42BC-AC5A-9B5360B78A89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books Module", "Books Module", "{C19A6BC3-8785-46EC-86CE-C0D837AACE12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users Module", "Users Module", "{E93A3C71-DAB9-4AD8-825B-43E367E86924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiverBooks.Users", "RiverBooks.Users\RiverBooks.Users.csproj", "{62C4CDAC-B093-4B7C-9E91-0A91015E7458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,18 @@ Global
 		{8B25DA1B-23E5-42BC-AC5A-9B5360B78A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B25DA1B-23E5-42BC-AC5A-9B5360B78A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B25DA1B-23E5-42BC-AC5A-9B5360B78A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C4CDAC-B093-4B7C-9E91-0A91015E7458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C4CDAC-B093-4B7C-9E91-0A91015E7458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C4CDAC-B093-4B7C-9E91-0A91015E7458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C4CDAC-B093-4B7C-9E91-0A91015E7458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96587CF0-CAF0-4531-AE60-18FC06C59E16} = {C19A6BC3-8785-46EC-86CE-C0D837AACE12}
+		{8B25DA1B-23E5-42BC-AC5A-9B5360B78A89} = {C19A6BC3-8785-46EC-86CE-C0D837AACE12}
+		{62C4CDAC-B093-4B7C-9E91-0A91015E7458} = {E93A3C71-DAB9-4AD8-825B-43E367E86924}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7ED58D3-BA07-4CA1-9EA8-0398FC63CAB8}
